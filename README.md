@@ -32,5 +32,3 @@ python3 generation.py
 ### Classification
 sh run.sh
 
-
-# TranSMOTE
