@@ -25,7 +25,7 @@ from torchvision.models.vision_transformer import VisionTransformer
 
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-encoder = ViTEncoderCIFAR10().to(device)
+encoder = ViTEncoder().to(device)
 batch_size = 100
 num_workers = 20
 num_classes = 10
