@@ -36,7 +36,7 @@ y_train=torch.load("data/svhn/train_y.pt")
 x_test=torch.load("data/svhn/test_x.pt")
 y_test=torch.load("data/svhn/test_y.pt")
 
-encoder = ViTEncoderCIFAR10().to(device)
+encoder = ViTEncoder().to(device)
 trainset = TensorDataset(x_train,y_train) 
 train_loader = torch.utils.data.DataLoader(trainset, 
     batch_size=batch_size,shuffle=True,num_workers=num_workers)
