@@ -3,7 +3,7 @@ import torch.nn as nn
 from torchvision.models.vision_transformer import VisionTransformer
 
 
-class ViTEncoderCIFAR10(nn.Module):
+class ViTEncoder(nn.Module):
     def __init__(self):
         super().__init__()
         self.encoder = VisionTransformer(
